@@ -6,26 +6,24 @@ type Environment = "STAGING" | "PRODUCTION";
 export default function App() {
   const [environment, setEnvironment] = useState<Environment>("STAGING");
 
-  const toggleEnvironment = () => {
-    setEnvironment((prevEnvironment) =>
-      prevEnvironment === "STAGING" ? "PRODUCTION" : "STAGING"
-    );
+  const toggleEnvironment = (selectedEnvironment: Environment) => {
+    setEnvironment(selectedEnvironment);
   };
 
   return (
     <main className="container">
-      <span className="switch">
-        <label htmlFor="environmentToggle">
-          Current Environment: {environment}
-        </label>
-        <input
-          type="checkbox"
-          id="environmentToggle"
-          checked={environment === "PRODUCTION"}
-          onChange={toggleEnvironment}
-        />
-        <span className="slider round"></span>
-      </span>
+      <div className="environment">
+        <label htmlFor="dropdown">Select Environment:</label>
+        <select
+          id="dropdown"
+          value={environment}
+          onChange={(e) => toggleEnvironment(e.target.value as Environment)}
+        >
+          <option value="STAGING">Staging</option>
+          <option value="PRODUCTION">Production</option>
+        </select>
+      </div>
+
       <iframe
         className="outer"
         src={
