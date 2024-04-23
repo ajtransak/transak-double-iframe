@@ -33,6 +33,23 @@ export default function App() {
         }
         allow="camera;microphone;payment"
       />
+
+      <GitHubRepo />
     </main>
   );
 }
+
+export const GitHubRepo = () => {
+  return (
+    <a
+      className="github"
+      href="https://github.com/ashutosh887/transak-double-iframe"
+      target="_blank"
+    >
+      <img
+        src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+        className="logo"
+      />
+    </a>
+  );
+};
