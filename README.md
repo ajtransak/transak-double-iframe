@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+## Double iframe Integration
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+So whenever you're planning to do a `Double IFrame Integration` there are a couple of things that you need to take care of:
 
-Currently, two official plugins are available:
+- Add `allow="camera;microphone;payment"` as attributes in both the enclosing and inner IFrames. In case you are not able to add it, the `Transak IFrame` automatically detects it and at the time of KYC, it provoides you with a unique `KYC Link` that you can use to complete the KYC. This unique URL is also emailed to the user on their specified Email ID in the previous screens.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Demoes - Orders & KYC
 
-## Expanding the ESLint configuration
+- [Order with the KYC Flow](https://www.loom.com/share/15a0c396d3a84b04985f95e92e1076a1?sid=523898d0-760f-4a23-99d9-52c311a6dd70)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Order without the KYC Flow](https://www.loom.com/share/d6d1ef4991944954ba6891e5671a31bd?sid=be3610b3-93c0-4f43-b734-0d400724e769)
 
-- Configure the top-level `parserOptions` property like this:
+### Demo Applications
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- [Transak Double IFrame](https://transak-double-iframe.vercel.app/)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [Transak Double IFrame - Supporter](https://transak-double-iframe-supporter.vercel.app/)
+
+  This application has two routes for IFrames:
+
+  - [staging](https://transak-double-iframe-supporter.vercel.app/staging)
+  - [production](https://transak-double-iframe-supporter.vercel.app/production)
