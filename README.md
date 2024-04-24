@@ -1,6 +1,6 @@
 ## Double iframe Integration
 
-So whenever you're planning to do a `Double IFrame Integration` there are a couple of things that you need to take care of:
+In case of `Double IFrame Integration` there are a couple of things that you need to take care of:
 
 - Add `allow="camera;microphone;payment"` as attributes in both the enclosing and inner IFrames. In case you are not able to add it, the `Transak IFrame` automatically detects it and at the time of KYC, it provoides you with a unique `KYC Link` that you can use to complete the KYC. This unique URL is also emailed to the user on their specified Email ID in the previous screens.
 
