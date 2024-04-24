@@ -15,4 +15,4 @@ In case of `Double IFrame Integration` there are a couple of things that you nee
 
 ### Live Applications
 
-- [Transak Double IFrame - Live on Vercel](https://transak-double-iframe.vercel.app/)
+- [Transak Double IFrame - Live Preview](https://transak-double-iframe.vercel.app/)
