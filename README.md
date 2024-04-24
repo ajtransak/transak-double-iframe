@@ -1,6 +1,6 @@
 ## Double iframe Integration
 
-You can use the below example code to establish a parent-child iframe scenario with `Transak` widget directly into a page of your web app.
+You can use the below example code to establish a parent-child iframe scenario with [Transak](https://transak.com/) widget directly into a page of your web app.
 
 In case of `Double IFrame Integration` there are a couple of things that you need to take care of:
 
