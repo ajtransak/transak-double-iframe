@@ -19,7 +19,7 @@
   height: 600px;
 }
 
-.environment {
+.content {
   display: flex;
   justify-content: flex-start;
   padding: 4px 0px;
@@ -29,7 +29,10 @@
 #dropdown {
   margin: 0px 8px;
   width: 100px;
-  align-items: center;
+}
+
+input {
+  margin: 0px 8px;
 }
 
 .github {
